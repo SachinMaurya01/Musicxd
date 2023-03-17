@@ -7,3 +7,4 @@ A Music Player WebApp where we can hear our favourite songs and create their pla
 ![Screenshot (69)](https://user-images.githubusercontent.com/100995198/224988125-b59a2d32-c22c-4686-bf15-16b52c8379b5.png)
 ![Screenshot (70)](https://user-images.githubusercontent.com/100995198/224988138-0d7e736d-4a35-4d4f-b91c-80fe95d9bc95.png)
 ![Screenshot (71)](https://user-images.githubusercontent.com/100995198/224988148-d9960d42-2ced-4509-83c4-703daded202a.png)
+Frontend Part Link- https://musicxd.netlify.app/
