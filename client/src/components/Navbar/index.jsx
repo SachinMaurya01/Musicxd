@@ -26,11 +26,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div className={styles.right}>
-				<div
-					style={{ backgroundColor: `${menu ? "#282828" : "#000"}` }}
-					className={styles.profile_menu}
-					onClick={() => setMenu(!menu)}
-				>
+				<div style={{ backgroundColor: `${menu ? "#282828" : "#000"}` }} className={styles.profile_menu} onClick={() => setMenu(!menu)} >
 					<AccountCircleIcon />
 					<p>Sachin Maurya</p>
 					{menu ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
