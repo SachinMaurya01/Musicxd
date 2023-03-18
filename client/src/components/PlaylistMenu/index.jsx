@@ -13,7 +13,7 @@ const PlaylistMenu = ({ closeMenu }) => {
 			<div className={styles.menu} onClick={closeMenu}>
 				<div className={styles.playlist_option}>
 					<p>Add to Playlist</p>
-					<Fragment>
+					<>
 						<ArrowRightIcon />
 						<div className={styles.playlists}>
 							{playlists.map((playlist) => (
@@ -22,7 +22,7 @@ const PlaylistMenu = ({ closeMenu }) => {
 								</div>
 							))}
 						</div>
-					</Fragment>
+					</>
 				</div>
 
 				<div className={styles.option}>
