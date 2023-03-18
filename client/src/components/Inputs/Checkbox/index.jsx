@@ -6,13 +6,7 @@ const CheckboxInput = ({ label, ...rest }) => {
 	return (
 		<FormControlLabel
 			className={styles.checkbox_container}
-			control={
-				<Checkbox
-					{...rest}
-					style={{ color: "#15883e" }}
-					className={styles.checkbox}
-				/>
-			}
+			control={ <Checkbox {...rest} style={{ color: "#15883e" }} className={styles.checkbox} /> }
 			label={label}
 		/>
 	);
