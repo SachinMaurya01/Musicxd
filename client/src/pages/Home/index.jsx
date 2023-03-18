@@ -9,7 +9,7 @@ const playlists = [
 
 const Home = () => {
 	return (
-		<Fragment>
+		<>
 			<div className={styles.container}>
 				<h1>Good afternoon</h1>
 				<div className={styles.playlists_container}>
@@ -20,7 +20,7 @@ const Home = () => {
 					<Playlists playlists={playlists} />
 				</div>
 			</div>
-		</Fragment>
+		</>
 	);
 };
 
