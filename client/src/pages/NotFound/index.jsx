@@ -11,9 +11,7 @@ const NotFound = () => {
 			<div className={styles.left}>
 				<div className={styles.main}>
 					<h1>404s and heartbreaks</h1>
-					<p>
-						We couldn’t find the page you were looking for. Oops , this page is not available.
-					</p>
+					<p> We couldn’t find the page you were looking for. Oops , this page is not available. </p>
 					<span onClick={() => history.push("/home")}>Go Back Home</span>
 				</div>
 			</div>
