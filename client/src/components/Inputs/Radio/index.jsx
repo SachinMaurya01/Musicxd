@@ -20,18 +20,10 @@ const RadioInput = ({
 			<p>{label}</p>
 			<RadioGroup {...rest} row name={name} onChange={handleChange}>
 				{options.map((option, index) => (
-					<FormControlLabel
-						key={index}
-						value={option}
-						control={
-							<Radio
-								disableRipple
-								style={{ color: "#15883e", transform: "scale(1.2)" }}
-								required={required}
-							/>
-						}
-						label={option}
-						className={styles.radio_input}
+					<FormControlLabel key={index} value={option}
+						control={ 
+							<Radio disableRipple style={{ color: "#15883e", transform: "scale(1.2)" }} required={required} /> }
+						label={option} className={styles.radio_input}
 					/>
 				))}
 			</RadioGroup>
