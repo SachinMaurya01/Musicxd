@@ -1,5 +1,5 @@
 # Musicxd -
-A Music Player WebApp where we can hear our favourite songs and create their playlists, add them to favourites. It has features like searching, Login (Authentication using JWT). It has backend part in Express.js and Node.js . Libraries Used - Joi, Joi-password-complexity , jsonwebtoken and Mongoose etc.
+A Music Player WebApp where we can hear our favourite songs and create our own playlists, add them to favourites. It has features like searching, playing, Login (Authentication using JWT). It has backend part in Express.js and Node.js . Libraries Used - Joi, Joi-password-complexity , jsonwebtoken and Mongoose etc.
 ![Screenshot (65)](https://user-images.githubusercontent.com/100995198/224988011-18fbdb00-c658-42d5-8476-f1448e4c1bd8.png)
 ![Screenshot (66)](https://user-images.githubusercontent.com/100995198/224988041-7b415407-b6c5-4ffe-87fc-37cc1b261e6d.png)
 ![Screenshot (67)](https://user-images.githubusercontent.com/100995198/224988104-f8d22d4f-dd72-45d6-b821-022b5c7a38f2.png)
