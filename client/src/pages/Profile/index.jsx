@@ -39,9 +39,7 @@ const Profile = () => {
 	};
 
 	const handleErrorState = (name, value) => {
-		value === ""
-			? delete errors[name]
-			: setErrors(() => ({ ...errors, [name]: value }));
+		value === "" ? delete errors[name] : setErrors(() => ({ ...errors, [name]: value }));
 	};
 
 	const schema = {
