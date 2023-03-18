@@ -30,13 +30,7 @@ const AudioPlayer = () => {
 				</div>
 				<div className={styles.progress_container}>
 					<p>0.30</p>
-					<input
-						type="range"
-						step="1"
-						min="0"
-						max={4}
-						className={styles.progress}
-					/>
+					<input type="range" step="1" min="0" max={4} className={styles.progress} />
 					<audio></audio>
 					<p>4.00</p>
 				</div>
