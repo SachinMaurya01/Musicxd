@@ -9,11 +9,11 @@ const Like = () => {
 
 	return (
 		<IconButton className={styles.like_btn} onClick={() => setLike(!like)}>
-			{!like ? (
-				<FavoriteBorderIcon className={styles.like_outlined} />
-			) : (
-				<FavoriteIcon className={styles.like_filled} />
-			)}
+			{!like ? 
+			         ( <FavoriteBorderIcon className={styles.like_outlined} /> ) 
+	                      : 
+			         ( <FavoriteIcon className={styles.like_filled} />)
+                        }
 		</IconButton>
 	);
 };
