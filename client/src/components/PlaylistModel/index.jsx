@@ -35,40 +35,16 @@ const PlaylistModel = ({ closeModel, playlist }) => {
 			<div className={styles.form_container}>
 				<h1>Edit Details</h1>
 				<div className={styles.input_container}>
-					<TextField
-						label="Name"
-						name="name"
-						value={data.name}
-						handleInputState={handleInputState}
-					/>
+					<TextField label="Name" name="name" value={data.name} handleInputState={handleInputState} />
 				</div>
 				<div className={styles.input_container}>
-					<TextField
-						label="Description"
-						name="desc"
-						value={data.desc}
-						handleInputState={handleInputState}
-					/>
+					<TextField label="Description" name="desc" value={data.desc} handleInputState={handleInputState} />
 				</div>
 				<div className={styles.input_container}>
-					<FileInput
-						label="Choose Image"
-						type="image"
-						name="img"
-						value={data.img === "" ? defaultImg : data.img}
-						handleInputState={handleInputState}
-					/>
+					<FileInput label="Choose Image" type="image" name="img" value={data.img === "" ? defaultImg : data.img}
+						handleInputState={handleInputState} />
 				</div>
-				<Button
-					label="Submit"
-					onClick={handleSubmit}
-					style={{
-						position: "absolute",
-						bottom: "0",
-						right: "0",
-						margin: "1rem",
-					}}
-				/>
+				<Button label="Submit" onClick={handleSubmit} style={{ position: "absolute", bottom: "0", right: "0", margin: "1rem", }} />
 			</div>
 		</div>
 	);
