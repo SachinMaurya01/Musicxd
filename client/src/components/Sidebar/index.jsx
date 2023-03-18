@@ -31,22 +31,13 @@ const Sidebar = () => {
 				<AddIcon />
 				<span>Create Playlist</span>
 			</div>
-			<NavLink
-				to="/collection/tracks"
-				className={styles.menu_link}
-				activeClassName={styles.active_menu}
-			>
+			<NavLink to="/collection/tracks" className={styles.menu_link} activeClassName={styles.active_menu} >
 				<img src={likeImg} alt="jfo" />
 				<span>Liked Songs</span>
 			</NavLink>
 			<div className={styles.underline}></div>
 			{playlists.map((playlist) => (
-				<NavLink
-					key={playlist._id}
-					to={`/playlist/${playlist._id}`}
-					activeClassName={styles.active_link}
-					className={styles.playlist_link}
-				>
+				<NavLink key={playlist._id} to={`/playlist/${playlist._id}`} activeClassName={styles.active_link} className={styles.playlist_link} >
 					{playlist.name}
 				</NavLink>
 			))}
