@@ -19,9 +19,7 @@ const Login = () => {
 	};
 
 	const handleErrorState = (name, value) => {
-		value === ""
-			? delete errors[name]
-			: setErrors({ ...errors, [name]: value });
+		value === "" ? delete errors[name] : setErrors({ ...errors, [name]: value });
 	};
 
 	const schema = {
@@ -94,11 +92,7 @@ const Login = () => {
 					<p className={styles.forgot_password}>Forgot your password?</p>
 					<div className={styles.form_bottom}>
 						<Checkbox label="Remember me" />
-						<Button
-							type="submit"
-							label="LOG IN"
-							style={{ color: "white", background: "#15883e", width: "20rem" }}
-						/>
+						<Button type="submit" label="LOG IN" style={{ color: "white", background: "#15883e", width: "20rem" }} />
 					</div>
 				</form>
 				<h1 className={styles.dont_have_account}>Don't have an account?</h1>
