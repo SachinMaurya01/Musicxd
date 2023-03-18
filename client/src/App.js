@@ -20,40 +20,23 @@ const App = () => {
 	const location = useLocation();
 
 	return (
-		<Fragment>
-			{user &&
-				location.pathname !== "/login" &&
-				location.pathname !== "/" &&
-				location.pathname !== "/signup" &&
-				location.pathname !== "/not-found" && (
-					<Fragment>
-						<Navbar />
-						<Sidebar />
-						<AudioPlayer />
-					</Fragment>
-				)}
+		<>
+			{user && location.pathname !== "/login" && location.pathname !== "/" && 
+			 location.pathname !== "/signup" && location.pathname !== "/not-found" && 
+			 ( 
+			   <> 
+			      <Navbar />
+			      <Sidebar />
+			      <AudioPlayer />
+			   </>
+			 )}
 			<Switch>
 				<Route exact path="/" component={Main} />
 				<PrivateRoute exact user={user} path="/home" component={Home} />
-				<PrivateRoute
-					exact
-					user={user}
-					path="/collection/tracks"
-					component={LikedSongs}
-				/>
-				<PrivateRoute
-					exact
-					user={user}
-					path="/collection/playlists"
-					component={Library}
-				/>
+				<PrivateRoute exact user={user} path="/collection/tracks" component={LikedSongs} />
+				<PrivateRoute exact user={user} path="/collection/playlists" component={Library} />
 				<PrivateRoute exact user={user} path="/search" component={Search} />
-				<PrivateRoute
-					exact
-					user={user}
-					path="/playlist/:id"
-					component={Playlist}
-				/>
+				<PrivateRoute exact user={user} path="/playlist/:id" component={Playlist}/>
 				<PrivateRoute exact user={user} path="/me" component={Profile} />
 				{user && <Redirect from="/signup" to="/home" />}
 				{user && <Redirect from="/login" to="/home" />}
@@ -62,7 +45,7 @@ const App = () => {
 				<Route path="/not-found" component={NotFound} />
 				<Redirect to="/not-found" />
 			</Switch>
-		</Fragment>
+		</>
 	);
 };
 
